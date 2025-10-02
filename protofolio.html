@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Ibrahim Mohamed, Flutter Developer and Computer Science student.">
+    <title>Ibrahim Mohamed - Portfolio</title>
+    <link rel="stylesheet" href="protofolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">IM</div>
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <a href="resume.pdf" download class="btn btn-secondary" aria-label="Download CV">Download CV</a>
+            </div>
+            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="section hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ibrahim Mohamed</h1>
+                <h2 class="hero-subtitle">Flutter Developer / Computer Science Student</h2>
+                <p class="hero-tagline">Passionate about building intuitive mobile apps with Flutter. Currently studying Computer Science at Beni Suef University, focusing on software development and innovative solutions.</p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-profile">
+                <img src="images/profile-placeholder.jpg" alt="Profile picture of Ibrahim Mohamed" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-bio">I am a dedicated Computer Science student at Beni Suef University with a strong focus on mobile app development using Flutter. My interests include exploring new technologies, building efficient applications, and contributing to open-source projects. I aim to create user-friendly solutions that solve real-world problems.</p>
+            <div class="about-timeline">
+                <div class="timeline-item">
+                    <h3>Education</h3>
+                    <p>Beni Suef University - Computer Science (Ongoing)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Experience</h3>
+                    <p>Freelance Flutter Developer - Building mobile apps for various clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects reveal">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/project-placeholder1.jpg" alt="Project 1 screenshot" class="project-img">
+                    <h3 class="project-title">Project One</h3>
+                    <p class="project-desc">A sample mobile app built with Flutter.</p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn btn-primary">Live</a>
+                        <a href="#" class="btn btn-secondary">Source</a>
+                    </div>
+                </div>
+                <!-- Repeat for 3-6 cards, using placeholders -->
+                <div class="project-card">
+                    <img src="images/project-placeholder2.jpg" alt="Project 2 screenshot" class="project-img">
+                    <h3 class="project-title">Project Two</h3>
+                    <p class="project-desc">Another example project.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn btn-primary">Live</a>
+                        <a href="#" class="btn btn-secondary">Source</a>
+                    </div>
+                </div>
+                <!-- Add more as needed -->
+            </div>
+            <!-- Modal for detailed view -->
+            <div id="project-modal" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="modal-close" aria-label="Close modal">&times;</span>
+                    <h2>Detailed Project</h2>
+                    <p>More in-depth description here.</p>
+                    <img src="images/project-placeholder1.jpg" alt="Detailed screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills reveal">
+        <div class="container skills-container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-technical">
+                <h3>Technical Skills</h3>
+                <div class="skill-item">
+                    <span>Dart</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Java</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>C++</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Flutter</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>RESTful APIs</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Firebase</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Git</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>VS Code</span>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                </div>
+            </div>
+            <div class="skills-soft">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required aria-required="true">
+                <label for="email">Email</label>
+                <input type="email" id="email" required aria-required="true">
+                <label for="message">Message</label>
+                <textarea id="message" required aria-required="true"></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p id="form-message" aria-live="polite"></p>
+            </form>
+            <div class="contact-direct">
+                <p>Email: <a href="mailto:hemaaa2262005@gmail.com">hemaaa2262005@gmail.com</a></p>
+                <p>Phone: <a href="tel:01150334072">01150334072</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ibrahim-mohamed-1979b6356" target="_blank" rel="noopener noreferrer">Profile</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2025 Ibrahim Mohamed. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ibrahim-mohamed-1979b6356" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt=""></a>
+                <!-- Add more if needed -->
+            </div>
+            <button id="back-to-top" aria-label="Back to top">↑</button>
+        </div>
+    </footer>
+
+    <script src="protofolio.js"></script>
+</body>
+</html>
